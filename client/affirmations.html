@@ -198,6 +198,103 @@
   .delay-1 { animation-delay: 0.1s; opacity: 0; }
   .delay-2 { animation-delay: 0.2s; opacity: 0; }
   .delay-3 { animation-delay: 0.3s; opacity: 0; }
+
+  /* SIGNUP SECTION */
+  .signup-section {
+    background: var(--warm-white);
+    padding: 48px 24px;
+    margin-top: -16px;
+  }
+
+  .signup-inner {
+    max-width: 480px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .signup-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(32px, 8vw, 48px);
+    font-weight: 400;
+    color: var(--charcoal);
+    line-height: 1.2;
+    margin-bottom: 24px;
+  }
+
+  .signup-title em {
+    font-style: italic;
+    color: var(--burgundy);
+  }
+
+  .signup-copy {
+    font-size: 16px;
+    color: var(--charcoal);
+    line-height: 1.8;
+    margin-bottom: 20px;
+  }
+
+  .signup-copy.italic {
+    font-style: italic;
+    color: var(--burgundy);
+    margin-bottom: 12px;
+  }
+
+  .heart-divider {
+    font-size: 24px;
+    margin: 20px 0;
+    color: var(--burgundy);
+  }
+
+  .form-group {
+    margin-bottom: 16px;
+  }
+
+  .form-input {
+    width: 100%;
+    padding: 16px 20px;
+    border: none;
+    border-radius: 50px;
+    background: var(--linen);
+    font-family: 'Jost', sans-serif;
+    font-size: 16px;
+    color: var(--charcoal);
+    transition: all 0.3s ease;
+  }
+
+  .form-input::placeholder {
+    color: rgba(76, 76, 76, 0.5);
+  }
+
+  .form-input:focus {
+    outline: none;
+    box-shadow: 0 4px 12px rgba(139, 58, 58, 0.15);
+  }
+
+  .submit-btn {
+    width: 100%;
+    padding: 16px 24px;
+    margin-top: 8px;
+    background: var(--burgundy);
+    color: var(--warm-white);
+    border: none;
+    border-radius: 50px;
+    font-family: 'Jost', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .submit-btn:hover {
+    background: var(--rose-deep);
+    transform: translateY(-2px);
+  }
+
+  .submit-btn:active {
+    transform: translateY(0);
+  }
 </style>
 </head>
 <body>
@@ -225,6 +322,36 @@
     </div>
   </div>
 </div>
+
+<section class="signup-section">
+  <div class="signup-inner">
+    <h2 class="signup-title">Let's <em>Grow</em> Together</h2>
+    
+    <p class="signup-copy">Every now and then, I'll send you the things I can't fit into a Reel.</p>
+    
+    <p class="signup-copy">Ideas, honest reflections, and practical tools to help you become your best self and manifest your <em>dream life</em>.</p>
+    
+    <p class="signup-copy">There isn't a finish line. Just new seasons, new dreams, and new versions of ourselves.</p>
+    
+    <p class="signup-copy italic">I'm navigating my next season too. Let's grow together</p>
+    
+    <div class="heart-divider">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="var(--burgundy)" xmlns="http://www.w3.org/2000/svg">
+        <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" fill="#8B3A3A"/>
+      </svg>
+    </div>
+    
+    <form onsubmit="handleSignup(event)">
+      <div class="form-group">
+        <input type="text" class="form-input" placeholder="Your first name" required>
+      </div>
+      <div class="form-group">
+        <input type="email" class="form-input" placeholder="Your email address" required>
+      </div>
+      <button type="submit" class="submit-btn">Join for Free</button>
+    </form>
+  </div>
+</section>
 
 <footer>
   <p class="footer-logo">Fern Impson</p>
