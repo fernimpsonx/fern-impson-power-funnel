@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fern Impson | Links</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@300;400;500&display=swap');
+
+  .fi-links * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  .fi-links {
+    font-family: 'Jost', sans-serif;
+    width: 100%;
+    overflow-x: hidden;
+    min-height: 100vh;
+    background-color: #F2E5DE;
+  }
+
+  .fi-links__header {
+    background-color: #FAF7F4;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 52px 24px 40px;
+  }
+
+  .fi-links__avatar {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center top;
+    border: 2px solid #B9968D;
+    margin-bottom: 20px;
+    background-image: url('/manus-storage/fern_profile_nav_a4aaecbc.png');
+    background-size: cover;
+    background-position: center;
+  }
+
+  .fi-links__name {
+    font-family: 'Jost', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 0.22em;
+    color: #2F2F2F;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .fi-links__tagline {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 17px;
+    font-weight: 400;
+    color: #6C403E;
+    text-align: center;
+  }
+
+  .fi-links__body {
+    background-color: #F2E5DE;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 24px 64px;
+  }
+
+  .fi-links__btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 420px;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 50px;
+    padding: 18px 28px;
+    margin-bottom: 16px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.15s ease;
+  }
+
+  .fi-links__btn:hover {
+    background-color: #f5ede9;
+    transform: translateY(-1px);
+  }
+
+  .fi-links__btn-text {
+    font-family: 'Jost', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    color: #2F2F2F;
+    text-align: left;
+    flex: 1;
+  }
+
+  .fi-links__cg {
+    color: #6C403E;
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 17px;
+  }
+
+  .fi-links__btn-badge {
+    font-family: 'Jost', sans-serif;
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    color: #ffffff;
+    background-color: #6C403E;
+    border-radius: 20px;
+    padding: 4px 12px;
+    text-transform: uppercase;
+    margin-left: 14px;
+    white-space: nowrap;
+  }
+
+  .fi-links__footer {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    text-decoration: none;
+  }
+
+  .fi-links__footer-icon {
+    width: 15px;
+    height: 15px;
+    fill: none;
+    stroke: #8B3A3A;
+    stroke-width: 1.5;
+    flex-shrink: 0;
+  }
+
+  .fi-links__footer-email {
+    font-family: 'Jost', sans-serif;
+    font-size: 11px;
+    font-weight: 300;
+    letter-spacing: 0.12em;
+    color: #6C403E;
+    text-decoration: none;
+  }
+</style>
+</head>
+<body>
+
+<div class="fi-links">
+
+  <div class="fi-links__header">
+    <div class="fi-links__avatar"></div>
+    <p class="fi-links__name">Fern Impson</p>
+    <p class="fi-links__tagline">Helping you manifest your dream life</p>
+  </div>
+
+  <div class="fi-links__body">
+    <a href="/" class="fi-links__btn">
+      <span class="fi-links__btn-text">Affirmations to <span class="fi-links__cg">Become</span> Your Best Self</span>
+      <span class="fi-links__btn-badge">Free</span>
+    </a>
+    
+    <a href="#" class="fi-links__btn">
+      <span class="fi-links__btn-text">Let's <span class="fi-links__cg">Grow</span> Together</span>
+      <span class="fi-links__btn-badge">Free</span>
+    </a>
+
+    <a href="mailto:fern@fernimpson.com" class="fi-links__footer">
+      <svg class="fi-links__footer-icon" viewBox="0 0 24 24" style="stroke: #8B3A3A;">
+        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" stroke="#8B3A3A" fill="none" stroke-width="1.5"/>
+        <path d="m4 6 8 6 8-6" stroke="#8B3A3A" fill="none" stroke-width="1.5"/>
+      </svg>
+      <span class="fi-links__footer-email">fern@fernimpson.com</span>
+    </a>
+  </div>
+
+</div>
+
+</body>
+</html>
