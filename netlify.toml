@@ -1,28 +1,3 @@
 [build]
   publish = "."
-  command = "echo 'Static site'"
-
-[[redirects]]
-  from = "/affirmations"
-  to = "/affirmations/index.html"
-  status = 200
-
-[[redirects]]
-  from = "/letsgrowtogether"
-  to = "/letsgrowtogether/index.html"
-  status = 200
-
-[[redirects]]
-  from = "/thankyou"
-  to = "/thankyou/index.html"
-  status = 200
-
-[[redirects]]
-  from = "/links"
-  to = "/links/index.html"
-  status = 200
-
-[[redirects]]
-  from = "/"
-  to = "/links/index.html"
-  status = 200
+  command = ""
